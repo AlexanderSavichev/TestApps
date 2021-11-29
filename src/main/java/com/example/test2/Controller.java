@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 @Component
-public class controller {
+public class Controller {
     @Autowired
     Method newMethod;
     double newWeight = 80.0;
