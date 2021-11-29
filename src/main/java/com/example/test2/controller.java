@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class controller {
     @Autowired
     Method newMethod;
-    double newWeight = 50.0;
+    double newWeight = 80.0;
     @GetMapping("/param")
     public double getWeight(@RequestParam(value = "level", defaultValue = "0") int level, @RequestParam (value = "index", defaultValue = "0") int index) {
         return newMethod.getWeight(level, index, newWeight);
