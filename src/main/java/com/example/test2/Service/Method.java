@@ -1,13 +1,13 @@
-package com.example.test2;
+package com.example.test2.Service;
 
 import org.springframework.stereotype.Component;
 
 
 @Component("newMethod")
 public class Method{
-    public double getWeight(int newlevel, int newindex, Double weight) {
+    public int getWeight(int newlevel, int newindex, Integer weight) {
         if (newlevel == 0) {
-            return 0.0;
+            return 0;
         } else if (newindex == 0) {
             return (getWeight(newlevel - 1, newindex, weight) + weight) / 2;
         } else if (newindex == newlevel) {
