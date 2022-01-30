@@ -9,8 +9,8 @@ public class CalculationResult {
     @Id
     @GeneratedValue
     public Long id;
-    public Integer ResLevel;
-    public Integer ResPosition;
-    public Integer ResWeight;
+    public Integer resLevel;
+    public Integer resPosition;
+    public Integer resWeight;
 
 }

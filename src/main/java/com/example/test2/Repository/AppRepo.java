@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AppRepo extends JpaRepository<CalculationResult, Long> {
-    CalculationResult findByResLevelAndResPosition (int resLevel, int resPosition);
+    CalculationResult findByResLevelAndResPosition (int ResLevel, int ResPosition);
 
 }

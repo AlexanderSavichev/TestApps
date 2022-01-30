@@ -22,13 +22,13 @@ public class Controller {
     @GetMapping("/param")
     public int getWeight(@RequestParam(value = "level", defaultValue = "0") int level, @RequestParam (value = "index", defaultValue = "0") int index) {
         CalculationResult result = repository.findByResLevelAndResPosition(level, index);
-        if (result != null) {return result.ResWeight;}
+        if (result != null) {return result.resWeight;}
         result = new CalculationResult();
-        result.ResLevel = level;
-        result.ResPosition = index;
-        result.ResWeight = newMethod.getWeight(level, index, newWeight);
+        result.resLevel = level;
+        result.resPosition = index;
+        result.resWeight = newMethod.getWeight(level, index, newWeight);
         repository.save(result);
-        return result.ResWeight;
+        return result.resWeight;
 
     }
 }
